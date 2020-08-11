@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ladakhpage.css">
+    </head>
+    <body>
+        <div class hd1><center><h3>KODAIKANAL</h3></center></div>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/rainy/kodaikanal/k1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption one</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/rainy/kodaikanal/k3.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/rainy/kodaikanal/k4.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/kodaikanal/k5.jpg" style="width:100%" height="400px">
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/kodaikanal/k6.jpg" style="width:100%" height="400px">
+        <div class="text">Caption five</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <div>
+     <h3 style="margin-left: 30px;">KODAIKANAL</h3>
+     <p style="margin-left: 30px;">Kodaikanal is a famous and finest hill station in Tamil Nadu and lies around 465  km away from Bangalore. Kodaikanal can be visited any time of the year, but the best time to visit is September to May; when the weather is at its best. As compared to Bangalore temperature whihc hovers around 28°C, Kodaikanal temperature, during this time of the year, is ideal to plan family holidays. 
+        Kodaikanal in Tamil Nadu is blessed with amazing weather that remains awesome throughout the year. Far away from the madding crowd, this hill town in south is brimming with forested valleys, pretty lakes and waterfalls and green hills. The temperature here mostly stays between 10 to 18 degree Celsius, making it a perfect destination for those seeking peace and tranquillity. After rains, the place gets all misty, which makes it look unexpectedly beautiful. Monsoons are also considered the best time to travel to Kodaikanal.
+        The views you get in Kodaikanal when it rains are to die for. Set on a plateau, the destination is enveloped in lush greenery, towering hills and mystic forests. If you love watching deep valleys, cloudy skies and rainbows after rain, Kodaikanal is just the right place for you. Besides, there are several amazing scenic points in Kodaikanal including Green Valley View also called the Suicide Point, Pillar Rocks, Berijam Lake, Dolphin’s Nose, Coakers Walk and Byrant Park where one can just sit and enjoy nature.
+        Monsoons are the best time to treat your taste buds in Kodaikanal. There are plenty of restaurants in Kodaikanal that serve authentic south-Indian food, including a huge variety of dosa and idli. Tava Vegetarian Restaurant, Astro Veg, Muncheez and Cloud Street are some of the good places to eat here.
+
+      </p>
+     <div class="vst">
+     <a href="https://en.wikipedia.org/wiki/Kodaikanal">Visit Here</a></div>
+     <br/>
+     <br/>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 

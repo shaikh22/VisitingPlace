@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ladakhpage.css">
+    </head>
+    <body>
+        <div class hd1><center><h3>CHERRAPUNJEE</h3></center></div>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/rainy/cherrapunjee/c4.jpg" style="width:100%" height="400px">
+      <div class="text">Caption one</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/rainy/cherrapunjee/c5.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/rainy/cherrapunjee/c1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/cherrapunjee/c2.jpg" style="width:100%" height="400px">
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/cherrapunjee/c3.jpeg" style="width:100%" height="400px">
+        <div class="text">Caption five</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <div>
+     <h3 style="margin-left: 30px;">CHERRAPUNJEE</h3>
+     <p style="margin-left: 30px;">High above misty valleys and foaming rivers, ensconced in swirling clouds and perched on an escarpment, lies Cherrapunji (4,500 feet). This is a stunning location and the year-round rain earned Cherrapunji coveted entry long ago into the Guinness Book of World Records as the wettest place on earth, the place where the rainfall can be recorded in feet rather than in millimeters.
+            Today, climatic changes have edged Cherrapunji out of the topmost 'wet' slot, but it still retains its pristine beauty, its unusual facets, the perpetual clouds, and the perpetual mists…. Appropriately, Cherrapunji lies in the heart of the State of Meghalaya-the abode of clouds.
+            Cherrapunji is perhaps the only place in India, which has just one season: the monsoon. The rainfall varies from heavy to medium to light, but there is no month without rain. Another surprising fact about Cherrapunji is that it rains mostly at night. Day-to-day activity is not really disrupted by the rain.
+            <br>
+            As in days gone by, the faces of Cherrapunji change not with the seasons, but with the pattern of rainfall. The heaviest downpours span approximately five long months-from May until September. The clouds then are dark and menacing, full blown with rain, which descends earthwards with the stinging force of a whiplash.
+            Throughout these months, Cherrapunji is transformed into a sea of tiny, gushing rivulets. The raindrops beat incessantly on rooftops and treetops creating a compelling tattoo of awesome sounds, which cannot be savored anywhere else but in the Northeastern states. These are also the 'record-making' months, which contribute to records such as the stunning 22,987 mm of rainfall in 1861.
+        
+
+      </p>
+     <div class="vst">
+     <a href="https://en.wikipedia.org/wiki/Cherrapunjee">Visit Here</a></div>
+     <br/>
+     <br/>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 

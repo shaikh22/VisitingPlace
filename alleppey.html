@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ladakhpage.css">
+    </head>
+    <body>
+        <div class hd1><center><h3>ALLEPPEY</h3></center></div>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/winter/alleppey/a2.jpg" style="width:100%" height="400px">
+      <div class="text">Caption one</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/winter/alleppey/a4.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/winter/alleppey/a5.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/winter/alleppey/a6.jpg" style="width:100%" height="400px">
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/winter/alleppey/a1.jpg" style="width:100%" height="400px">
+        <div class="text">Caption five</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <div>
+     <h3 style="margin-left: 30px;">ALLEPPEY</h3>
+     <p style="margin-left: 30px;">Built in the 9th century AD, Alleppey, called Alappuzha lies on the edge of the great Ashtamudi Lake. With the Arabian Sea on the west and a vast labyrinth of lakes, lagoons and several freshwater rivers criss-crossing it, Alappuzha is a district of immense natural beauty.
+      Related to the Venice of the East by travellers from around the world, this Backwater Country is also home to diverse range of animals and birds. It has always been honored a unique place in the maritime history of Kerala for its proximity to the sea. Alleppey has earned fame in the commercial world as the world's premier supplier of coir.
+       Today, Alleppey has emerged as a Backwater Tourist Centre, beckoning thousands of foreign tourists each year. Alleppey is also famous for its Boat races, Houseboat Holidays, Beaches, Marine Products and Coir Industry.
+       Alleppey - Kuttanad - The enticing backwaters and the amazing backwater house boats attracts thousands of tourists to this place. Get on these boats and rub shoulders with a colourful and varied group of locals.Or take a ride into Kuttanad through lush green fields and watch coir workers soak, beat and weave coconut fibres into long ropes on spindles as you pass the endless stretch of coconut trees.
+
+
+      </p>
+     <div class="vst">
+     <a href="https://en.wikipedia.org/wiki/Alleppey">Visit Here</a></div>
+     <br/>
+     <br/>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 

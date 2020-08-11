@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+nav{
+  width: 100%;
+ /*line-height: 5px;*/
+  height: 100px;
+  background: rgba(26, 34, 49, 0.534);
+  position: sticky;
+  }
+  ul{
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      text-align: right;
+  }
+  ul li{
+      list-style: none;
+      display: inline-block;
+      line-height: 30px;
+      margin: 0 20px;
+      
+  }
+  ul li a:hover{
+     color: rgb(0, 0, 0);
+  }
+  ul li a{
+    text-shadow: 1px 1px 2px crimson;
+      color: blanchedalmond;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+  .toggle{
+      width: 100%;
+      padding: 10px 20px;
+      background: rgb(58, 74, 97);
+      text-align: right;
+      box-sizing: border-box;
+      color: white;
+      font-size: 30px;
+      display: none;
+  }
+  @media (max-width:768px)
+  {
+      .toggle{
+          display: block;
+          
+      }
+  
+       ul
+      {
+          width: 100%;
+          display: none;
+          height: 20vh;
+          background:rgba(26, 34, 49, 0.534); 
+      }
+      ul li{
+          display: block;
+          text-align: left;
+          
+      }
+      .active{
+          display: block;
+  }
+  }
+
+.container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: animation 16s ease-in-out infinite;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+.outer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);  
+}
+
+@keyframes animation {
+     0%{
+      background-image: url('images/m1.jpg');
+      width: 100%;
+      height: 100vh;
+  }
+  25%{
+      background-image: url('images/d3.jpg');
+      width: 100%;
+      height: 100vh;
+  }
+  55%{
+      background-image: url('images/js3.jpg');
+      width: 100%;
+      height: 100vh;
+  }
+  85%{
+      background-image: url('images/b1.jpg');
+      width: 100%;
+      height: 100vh;
+  }
+  100%{
+      background-image: url('images/k1.jpg');
+      width: 100%;
+      height: 100vh;
+  }
+  /*
+  140%{
+      background-image: url('images/j3.jpg');
+      width: 100%;
+      height: 100vh;
+  }*/
+}    
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    /*background-color: indianred;*/
+    background-image: url('images/k1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+  
+
+    }
+    
+    nav .logoname{
+        padding: 20px;
+        width: 20%;
+       
+        text-align: center;
+        text-shadow: 1px 1px 2px crimson;
+        font-weight: bolder;
+        color: rgb(255, 235, 205);
+       }
+  
+    main{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: blanchedalmond;
+    }
+    
+    section h4{
+        /*font-size: 3ch;*/
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px crimson;
+    }
+    section h1{
+        margin: 30px 0 30px 0;
+       /* font-size: 5ch;*/
+        font-weight: 600;
+        text-shadow: 2px 1px 5px crimson;
+    }
+  
+    section a{
+        padding: 10px  10px ;
+        border-radius: 2px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 300;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: all .5s ease;
+    }
+    section .btnone{
+        padding: 12px 25px ;
+        background: silver;
+        color: black;
+        text-decoration: none;
+        
+    }
+    .btnone:hover{
+        background-color: rgb(14, 99, 102);
+    }
+    section .btntwo{
+        padding: 12px 25px ;
+        background: silver;
+        color: black;
+        text-decoration: none;
+       
+    }
+    .btntwo:hover{
+        background-color: rgb(14, 99, 102);
+    }
+    section .btnthree{
+        padding: 12px 25px ;
+        background: silver;
+        color: black;
+        text-decoration: none;
+        
+    }
+    .btnthree:hover{
+        background-color: rgb(14, 99, 102);
+    }
+    .change_content::after{
+        content: '';
+        animation: changetext 16s ease-in-out infinite;
+        color: rgb(14, 37, 87);       
+    }
+    @keyframes changetext{
+        0%{content:"MUMBAI";}
+        25%{content: "DEHLI";}
+        55%{content: "JAISALAMER";}
+        85%{content: "BANGALORE";}
+        100%{content: "KERALA";}
+       /* 140%{content: "JAIPUR";}*/
+    }
+
+    

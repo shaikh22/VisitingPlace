@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ladakhpage.css">
+    </head>
+    <body>
+        <div class hd1><center><h3>BINSAR</h3></center></div>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/winter/binsar/b1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption one</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/winter/binsar/b3.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/winter/binsar/b4.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/winter/binsar/b5.jpg" style="width:100%" height="400px">
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/winter/binsar/B2.jpg" style="width:100%" height="400px">
+        <div class="text">Caption five</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <div>
+     <h3 style="margin-left: 30px;">BINSAR</h3>
+     <p style="margin-left: 30px;">Binsar is an ideal destination for writers, nature lovers and adventure lovers. The views of major peaks like Chaukhamba, Panchachuli, Nanda Devi, Nanda Kot, and Kedarnath are distinctly visible from here.
+        Binsar Hills known as Jhandi Dhar, rise to a height of 2412 mts and offer an excellent view of Almora town, Kumaon hills and the greater Himalayan valley.
+        If you are a die-hard nature lover then prepare yourself to add Binsar in your bucket list. It is an ideal place for Bird watching and wildlife photography.  There are several popular excursions in proximity of Binsar. Take peaceful and serene walks at Binsar, enjoying the unmatched beauteousness of nature.
+        <br>
+        A popular hill station situated in the holy state of Uttarakhand, Binsar is a beautiful and quiet hill station famous for its breathtaking and picturesque scenery. Lush green vegetation surrounds the entire town, and Binsar is also home to a wide range of rare animals, birds, and exotic wild flowers. This makes the Binsar Wildlife Sanctuary a major attraction for national and international tourists alike. \r\n\r\nVisitors bask in the tranquil beauty of the magnificent Himalayas while the adrenaline junkies get their fix through trekking down challenging trails or by attempting to climb the different Himalayan peaks such as Nanda Devi, Nanda Kot, Kedarnath, Trishul, and Panchchuli. Besides the wildlife sanctuary, the Bineshwar Mahadev Temple, Binsar Sanctuary Museum, and Kasar Devi Temple are some of the other major tourist attractions in Binsar.
+
+        </p>
+     <div class="vst">
+     <a href="https://en.wikipedia.org/wiki/Binsar">Visit Here</a></div>
+     <br/>
+     <br/>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 

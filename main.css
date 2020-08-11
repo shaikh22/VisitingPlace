@@ -1,0 +1,162 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+header{
+width: 100%;
+height: auto;
+/*background-color: indianred;*/
+background-image:url('images/rain6.jpg');
+background-size: cover;
+}
+
+.rain{
+    height: auto;
+    width: 100%;
+        background-image: url('newrain.png');
+        animation: rain .3s linear infinite;
+    }        
+    @keyframes rain {
+        from{background-position: 0% 0%;}
+        to{background-position: 20% 100%;}
+    }
+
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(151, 195, 212);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logoname{
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    }
+nav .menu a{
+    padding: 30px;
+    width: 25%;
+    color: blanchedalmond;
+    font: larger;
+    text-decoration: none;
+}
+nav .menu a:first-child{
+    color: rgb(209, 98, 98);
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+section h4{
+
+    text-align: center;
+    transform: translateX(-50) translateY(-50%);
+    font-size: 3ch;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 2px crimson;
+    margin-top: -100px;
+
+}
+section h1{
+
+    text-align: center;
+    transform: translateY(-550%) translateY(-50%);
+    font-size: 5ch;
+    font-weight: 600;
+    text-shadow: 2px 1px 5px crimson;
+}
+section p{
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 200;
+    word-spacing: 10px;
+    text-shadow: 2px 1px 2px crimson;
+}
+
+
+section a{
+    padding: 10px  10px ;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .btnone a{
+    background: silver;
+    color: black;
+    text-decoration: none;
+    float:right;
+
+}
+.btnone:hover{
+    background-color: rgb(14, 99, 102);
+}
+
+
+
+.change_content::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: rgb(14, 37, 87);       
+}
+@keyframes changetext{
+    0%{content:"MUMBAI";}
+    20%{content: "DEHLI";}
+    35%{content: "BELGAUM";}
+    60%{content: "BANGALORE";}
+    80%{content: "KERALA";}
+    100%{content: "JAIPUR";}
+
+}
+.maindiv{
+    width: 100%; height: 100vh;
+    background-image: url('rain6.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+    
+    .rain{
+    /* width: 100%;*/
+    height: 100vh;
+    background-image: url('newrain.png');
+    animation: rain .3s linear infinite;
+    }        
+    @keyframes rain {
+    from{background-position: 100% 100%;}
+    to{background-position: 10% 0%;}
+    }
+
+/* RAIN CSS */
+
+/*.maindiv{
+width: 100%; height: 100vh;
+background-image: url('rain6.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.rain{
+/* width: 100%;*/
+/* height: 100vh;
+background-image: url('newrain.png');
+background-size: 100% 100%;
+background-repeat:no-repeat;
+
+animation: rain .3s linear infinite;
+}        
+@keyframes rain {
+from{background-position: 150% 100%;}
+to{background-position: 0% 0%;}
+}

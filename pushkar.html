@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ladakhpage.css">
+    </head>
+    <body>
+        <div class hd1><center><h3>PUSHKAR</h3></center></div>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/rainy/pushkar/p1.webp" style="width:100%" height="400px">
+      <div class="text">Caption one</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/rainy/pushkar/p2.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/rainy/pushkar/p3.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/pushkar/p4.jfif" style="width:100%" height="400px">
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/pushkar/p5.jpg" style="width:100%" height="400px">
+        <div class="text">Caption five</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <div>
+     <h3 style="margin-left: 30px;">PUSHKAR</h3>
+     <p style="margin-left: 30px;">When you are in Pushkar, the main thing to look for in accommodation is located. You want to be near the ghat (the lake). This is where all of the action is and the feature of the city. The accommodation is very cheap in Pushkar and you can get a hostel for $5-10 or a private room for $10-20. I have recommended two places below. One is a hostel by the popular Zostel chain and the other is a value pick for a private room. Both have a pool, which is nice because it can get very hot and there is no beach or swimming lake nearby.
+        The best time to visit Pushkar is dependent on the weather and festivals. On the 23rd of October til the 4th of November, the famous Pushkar Camel Fair is in full swing. It’s one of the most recommended things to do in Pushkar so if you can time your trip for this 10 day period, it’s the time of the year where the town is full of action and good vibes. Therefore to see the town at its finest the best to visit Pushkar is in late October.
+        Another awesome festival that is run in Pushkar is the Hot Air Ballooning Festival, which runs from 5th Nov to 14th Nov 2016.
+        If you are considering what the best time to visit Pushkar. 
+
+      </p>
+     <div class="vst">
+     <a href="https://en.wikipedia.org/wiki/Pushkar">Visit Here</a></div>
+     <br/>
+     <br/>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 

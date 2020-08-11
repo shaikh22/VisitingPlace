@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url('images/a1.jpg') no-repeat center;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background: rgba(26, 34, 49, 0.534);
+    }
+    ul{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: right;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        line-height: 30px;
+        margin: 0 20px;
+        
+    }
+    ul li a:hover{
+       color: rgb(0, 0, 0);
+    }
+    ul li a{
+      text-shadow: 1px 1px 2px crimson;
+        color: blanchedalmond;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .toggle{
+        width: 100%;
+        padding: 10px 20px;
+        background: rgb(4, 38, 87);
+        text-align: right;
+        box-sizing: border-box;
+        color: white;
+        font-size: 30px;
+        display: none;
+    }
+    @media (max-width:768px)
+    {
+        .toggle{
+            display: block;
+            
+        }
+    
+         ul
+        {
+            width: 100%;
+            display: none;
+            height: 20vh;
+            background:rgba(26, 34, 49, 0.534); 
+        }
+        ul li{
+            display: block;
+            text-align: left;
+            
+        }
+        .active{
+            display: block;
+    }
+    }
+   nav .logoname{
+        padding: 20px;
+        width: 20%;
+        text-align: center;
+        text-shadow: 1px 1px 2px crimson;
+        font-weight: bolder;
+        color: blanchedalmond;
+       }
+.contact-section{
+    /*background: url('images/a1.jpg') no-repeat center;*/
+    background-size: cover;
+   
+}
+.contact-section h1{
+    text-align: center;
+    color: rgb(209, 46, 95);
+    padding: 20px 10px;
+    
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 80px 10px;
+    overflow: hidden;
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgba(33, 46, 61, 0.733);
+    padding: 20px 40px;
+    outline: none;
+    color:rgb(214, 214, 214);
+    transition: 0.5s;
+}
+
+.contact-form-text:hover{
+    box-shadow: 0 0 10px 4px #182830;
+}
+.textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background-color: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-form-btn:hover{
+    background: #2980b9;
+}
+
+
+

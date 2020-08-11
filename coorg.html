@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ladakhpage.css">
+    </head>
+    <body>
+        <div class hd1><center><h3>COORG</h3></center></div>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/rainy/coorg/c1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption one</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/rainy/coorg/c2.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/rainy/coorg/c3.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/coorg/c4.jpg" style="width:100%" height="400px">
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/coorg/c5.jpg" style="width:100%" height="400px">
+        <div class="text">Caption five</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <div>
+     <h3 style="margin-left: 30px;">COORG</h3>
+     <p style="margin-left: 30px;">Coorg is a very well – known hill station in Karnataka, also known as the Scotland Of India! This enchanting place gets a new fresh look at the seasonal waterfall and rainy season of July and August. 
+        For those who love water sports and water activities, it’s amongst the best destinations. It’s also a natural paradise with lush greenery, water flowing all around and flowers blossoming. Those who love to capture nature at its best; this too is one of the best times around the year to do so.
+        it is one of the best tourist attraction place in India. Magical mountains, awesome wind, salubrious environment, and rich fragrance of coffee and cardamom farms will immerse your feelings as you step into this charming mountain place of Karnataka.  
+        The Abbey Falls is one of the most wonderful falls in South India, situated 10 km. away from Madikeri. This wonderful falls flowing from spectacular mountains of the Western Ghats, with misty in the backdrop, is a beauty to behold for some time.
+        <br>
+        Of all vacationer locations in Coorg, Iruppu fountain is one of the most well-known. Stream Lakshmana Tirtha takes a 60 feet drop amidst the green mountains to turn into these falls. The attractive view of the ferns along with the gushing audio of the falls makes for an unforgettable encounter.
+        
+      </p>
+     <div class="vst">
+     <a href="https://en.wikipedia.org/wiki/Coorg">Visit Here</a></div>
+     <br/>
+     <br/>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ladakhpage.css">
+    </head>
+    <body>
+        <div class hd1><center><h3>MUNNAR</h3></center></div>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/rainy/munnar/m1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption one</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/rainy/munnar/m2.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/rainy/munnar/m3.png" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/munnar/m4.jpg" style="width:100%" height="400px">
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/rainy/munnar/m5.jpg" style="width:100%" height="400px">
+        <div class="text">Caption five</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <div>
+     <h3 style="margin-left: 30px;">MUNNAR</h3>
+     <p style="margin-left: 30px;">The best time to visit Munnar is winter season (September till February), as the weather remains calm and pleasant and sometime the temperature comes down to 11°C here. Moreover, winter is also considered as an ideal time for adventure activities like trekking, rock climbing and rappelling.
+        Munnar was the summer capital of the British in southern India. Munnar was developed to cultivate tea plants by British although it was first discovered by Scottish planters. Munnar is located at the confluence of three mountain streams Mudra puzha, Nallathanni and Kundala. Once, Munnar was the summer resort of the British government in South India. There is much more about Munnar that simply cannot be put in words. We totally informed about this magnificent hill retreat before embarking on a tour. Munnar is also known as the Kashmir of Kerala. The formal history was wrote since the 10th century; the first British who visits the area was the Duke of Wellington, in 1790, during the British Raj, at the same time also migrated to Munnar and nearby places was occupied by them.
+        <br>
+        The Munnar history began in the prehistoric, so prove the relics discovered around the area point of Stone Age civilization. A British lawyer and tea planter leased close to 600 sq. km of land around Munnar, which was then covered with thick jungle, from the Poonjar chief, a subordinate of the Maharaja of Travancore. He then cleared the jungle for Tea plantations. Then in 1983 James Finlay Group sold their remaining share holdings and the company became known as Tata Tea Ltd., the largest integrated tea company in the world. 
+
+      </p>
+     <div class="vst">
+     <a href="https://en.wikipedia.org/wiki/Munnar">Visit Here</a></div>
+     <br/>
+     <br/>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 
